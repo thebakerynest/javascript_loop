@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>  
+        <title>JavaScript - array & forloop</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+        
+        <style type="text/css">
+            #printDay {
+                color:royalblue;
+                font-size: 1.5em;
+                font-family: 'Shrikhand', cursive;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="printDay">           
+        
+        </div>
+        <script type="text/javascript">
+            var tweetString="";
+            var tweets = ["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            //var display = document.getElementById("printDay").innerHTML.value;
+            for (var i=0;i<tweets.length;i++){
+                
+                tweetString = tweetString + "<p>" + tweets[i] ;
+               
+               
+               console.log("i:" + i);
+               console.log(tweetString);
+                
+                //document.getElementById("printDay").innerHTML="<p>";
+               }
+            document.getElementById("printDay").innerHTML=tweetString;
+        </script>
+        
+    </body>
+</html>
